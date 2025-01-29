@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ContentProvider</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="contacts">Мои контакты</string>
+    <string name="textSms">Текст сообщения</string>
+    <string name="send">Отправить</string>
+</resources>
