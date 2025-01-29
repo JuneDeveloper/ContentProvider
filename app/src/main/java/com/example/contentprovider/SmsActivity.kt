@@ -5,6 +5,7 @@ import android.os.Build
 import android.os.Bundle
 import android.telephony.SmsManager
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ class SmsActivity : AppCompatActivity() {
         binding = ActivitySmsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbarTB)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         number = intent.extras?.getString("sms")
         binding.smsNumberTV.text = number
@@ -55,5 +57,12 @@ class SmsActivity : AppCompatActivity() {
                 this,"Please enter all the data.."+e.message.toString(),
                 Toast.LENGTH_LONG).show()
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home -> finish()
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

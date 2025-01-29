@@ -23,14 +23,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_call_24"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/icon_shape"/>
 
             <ImageView
                 android:id="@+id/imageSmsIV"
-                android:layout_width="30dp"
+                android:layout_width="40dp"
                 android:layout_height="30dp"
                 android:src="@drawable/sms"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/icon_shape"/>
 
         </LinearLayout>
 
