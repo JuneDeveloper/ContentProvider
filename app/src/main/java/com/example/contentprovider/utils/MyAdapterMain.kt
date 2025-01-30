@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -19,12 +18,12 @@ import com.example.contentprovider.R
 import com.example.contentprovider.SmsActivity
 import com.example.contentprovider.model.ContactModel
 
-class MyAdapter(
+class MyAdapterMain(
     private val sms:ActivityResultLauncher<String>,
     private val call:ActivityResultLauncher<String>,
     private val context: Context,
     private val contactList:MutableList<ContactModel>)
-    :RecyclerView.Adapter<MyAdapter.UserViewHolder>() {
+    :RecyclerView.Adapter<MyAdapterMain.UserViewHolder>() {
 
 
     class UserViewHolder(itemView: View) : ViewHolder(itemView) {

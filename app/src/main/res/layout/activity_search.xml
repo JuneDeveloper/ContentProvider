@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backItem"
+        app:title="@string/contacts"/>
+
+    <EditText
+        android:id="@+id/searchContactET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputTextSearch"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/sms_shape"/>
+
+    <Button
+        android:id="@+id/searchContactBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/backItem"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycleViewRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_list"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

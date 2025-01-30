@@ -5,4 +5,9 @@
     <string name="contacts">Мои контакты</string>
     <string name="textSms">Текст сообщения</string>
     <string name="send">Отправить</string>
+    <string name="inputName">Введите имя</string>
+    <string name="inputPhone">Введите номер</string>
+    <string name="add">Добавить</string>
+    <string name="inputTextSearch">Введите символы для поиска</string>
+    <string name="search">Найти</string>
 </resources>

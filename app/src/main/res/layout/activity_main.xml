@@ -15,6 +15,33 @@
         android:background="@color/backItem"
         app:title="@string/contacts" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/newNameAddET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputName"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/newPhoneAddET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputPhone"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/newAddBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add"/>
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleViewRV"
         android:layout_width="match_parent"

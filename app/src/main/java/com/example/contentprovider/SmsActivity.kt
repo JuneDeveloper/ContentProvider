@@ -1,6 +1,7 @@
 package com.example.contentprovider
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.telephony.SmsManager
@@ -61,7 +62,7 @@ class SmsActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            android.R.id.home -> finish()
+            android.R.id.home -> startActivity(Intent(this,MainActivity::class.java))
         }
         return super.onOptionsItemSelected(item)
     }
